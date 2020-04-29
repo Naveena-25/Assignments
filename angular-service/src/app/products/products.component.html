@@ -1,0 +1,11 @@
+<div class="col-md-4 float-left" *ngFor = 'let product of products'>
+    <div class="card">
+        <div class="card-body">
+            <img [src]="product.productImageURL" alt="" width = "100%">
+            <p>{{product.productName}}</p>
+            <p>{{product.productDescription}}</p>
+            <button class="btn btn-outline-primary" (click) = 'selectProduct(product)'>Update</button>
+            <button class="btn btn-outline-dark float-right" (click) = 'deleteProduct(product)'>Delete</button>
+        </div>
+    </div>
+</div>
