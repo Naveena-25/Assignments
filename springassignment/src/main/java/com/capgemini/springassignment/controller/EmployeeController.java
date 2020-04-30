@@ -15,7 +15,7 @@ import com.capgemini.springassignment.service.EmployeeServiceImpl;
 @Controller
 public class EmployeeController {
 	@Autowired
-	EmployeeService service;
+	private EmployeeService service;
 	@GetMapping("/getEmployeeForm") 
 	public String getEmployeeForm() {
 		
@@ -79,6 +79,6 @@ public class EmployeeController {
 			if(added) {
 				modelMap.addAttribute("add",added);
 			}
-			return "added";
+			return "add-employee";
 		}		
 }

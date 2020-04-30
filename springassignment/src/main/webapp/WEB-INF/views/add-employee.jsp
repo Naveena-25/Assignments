@@ -30,7 +30,7 @@
 			</tr>
 			<tr>
 				<td>Designation:</td>
-				<td><input type="number" name="deptno"></td>
+				<td><input type="text" name="deptno"></td>
 			</tr>
 			<tr>
 				<td>Age:</td>
