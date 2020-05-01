@@ -10,6 +10,9 @@ import { ProductsComponent } from './products/products.component';
 import { AddProductsComponent } from './add-products/add-products.component';
 import { PostsComponent } from './posts/posts.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     ProductsComponent,
     AddProductsComponent,
     PostsComponent,
-    EditProductComponent
+    EditProductComponent,
+    LoginComponent,
+    RegisterComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent implements OnInit {
   message :string;
+  search;
   products;
   constructor(private productService : ProductService ,
      private router:Router

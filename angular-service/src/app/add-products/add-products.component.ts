@@ -20,7 +20,7 @@ export class AddProductsComponent implements OnInit {
       console.log(response);
       form.reset();
       if(!response.error) {
-        this.message="product added successfully";
+        this.message="Product Added Successfully";
       }
     }, error => {
       console.log(error);
