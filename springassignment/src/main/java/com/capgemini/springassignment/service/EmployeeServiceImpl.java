@@ -9,8 +9,14 @@ import com.capgemini.springassignment.bean.EmployeeInfoBean;
 import com.capgemini.springassignment.dao.EmployeeDAO;
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
-@Autowired
+	@Autowired
 	private EmployeeDAO dao;
+
+	@Override
+	public EmployeeInfoBean authenticate(int empid, String password) {
+		// TODO Auto-generated method stub
+		return dao.authenticate(empid, password);
+	}
 	@Override
 	public EmployeeInfoBean getEmployeeDetails(int empid) {
 		return dao.getEmployeeDetails(empid);
@@ -20,7 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public boolean addEmployee(EmployeeInfoBean info) {
 		// TODO Auto-generated method stub
 		return dao.addEmployee(info);
-		}
+	}
 
 	@Override
 	public List<EmployeeInfoBean> getAllEmployeeRecord() {

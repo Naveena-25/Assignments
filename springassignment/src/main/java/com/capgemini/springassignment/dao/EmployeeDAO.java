@@ -6,6 +6,7 @@ import com.capgemini.springassignment.bean.EmployeeInfoBean;
 
 
 public interface EmployeeDAO {
+	EmployeeInfoBean authenticate(int empid, String password);
 	EmployeeInfoBean getEmployeeDetails(int empid);
 	boolean addEmployee(EmployeeInfoBean info);
 	List<EmployeeInfoBean> getAllEmployeeRecord();

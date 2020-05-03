@@ -8,6 +8,12 @@
 </head>
 <body>
 	<fieldset>
+	<h2>
+		<a href="./home" style="text-align: left">Home</a>
+	</h2>
+	<h2>
+		<a href="./logout" style="text-align: right">logOut</a>
+	</h2>
 	<legend>Delete Employee</legend>
 	<form action="./deleteEmployee">
 	Employee Id : <input type ="number" name="id" required>

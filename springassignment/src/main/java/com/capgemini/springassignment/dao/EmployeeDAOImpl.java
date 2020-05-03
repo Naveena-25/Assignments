@@ -15,6 +15,17 @@ import com.capgemini.springassignment.bean.EmployeeInfoBean;
 public class EmployeeDAOImpl implements EmployeeDAO{
 	@PersistenceUnit
 	private EntityManagerFactory factory;
+	
+	@Override
+	public EmployeeInfoBean authenticate(int empid, String password) {
+		EmployeeInfoBean employeeInfoBean=getEmployeeDetails(empid);
+		if (employeeInfoBean!=null && employeeInfoBean.getPassword().equals(password)) {
+			return employeeInfoBean;
+		}	
+		return null;
+	}
+	
+	
 	@Override
 	public EmployeeInfoBean getEmployeeDetails(int empid) {
 	EntityManager manager = factory.createEntityManager();
